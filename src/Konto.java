@@ -10,7 +10,12 @@ public class Konto {
     }
 
     public void setKapital(float kapital) {
-        this.kapital = kapital;
+        if (kapital >= 0){
+            this.kapital = kapital;
+        }
+        else {
+            System.out.println("Kein Dispo vorhanden");
+        }
     }
 
     public float getKapital() {
